@@ -4,7 +4,7 @@
 Gavin Li `gl183`
 
 ## Website & Video explanation
-[Website](https://www.baidu.com)[Video explanation](https://www.youtube.com)
+[Website](https://www.baidu.com)<br />[Video explanation](https://www.youtube.com)
 ## Purpose of the project
 
 ## Overview
