@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chaset="UTF-8">
+    <meta name="" viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <select id="myDropdown">
+        {% for team in teams %}
+        <option value="{{ team }}">{{ team }}</option>
+        {% endfor %}
+    </select>
+    <button type="button" onclick="submitOption()">Get Intro</button>
+
+    <script>
+        function submitOption() {
+            var selectedValue = document.getElementById('myDropdown').value;
+            // console.log(selectedValue);
+            window.location.href = '/team?selectedOption=' + encodeURIComponent(selectedValue);
+        }
+    </script>
+</body>
+
+</html>
