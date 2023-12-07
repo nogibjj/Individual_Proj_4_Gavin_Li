@@ -7,3 +7,7 @@ ruff==0.0.284
 boto3==1.24.87
 #web
 flask
+gunicorn
+
+python-dotenv
+openai
