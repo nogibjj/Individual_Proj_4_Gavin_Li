@@ -2,6 +2,9 @@
 Test goes here
 
 """
+from main import a
+
 
 def test_main():
-    pass
+    a()
+    assert 1 == 1
