@@ -1,19 +1,15 @@
-"""
-Main cli or app entry point
-"""
+from flask import Flask
 
-from mylib.calculator import add
-import click
+app = Flask(__name__)
 
-#var=1;var=2
+@app.route("/")
+def index():
+    pass
 
-@click.command("add")
-@click.argument("a", type=int)
-@click.argument("b", type=int)
-def add_cli(a, b):
-    click.echo(add(a, b))
+
+
+
 
 
 if __name__ == "__main__":
-    # pylint: disable=no-value-for-parameter
-    add_cli()
+    pass
