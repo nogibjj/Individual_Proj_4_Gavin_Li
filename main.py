@@ -1,7 +1,11 @@
 from flask import Flask, render_template, request
 from dotenv import load_dotenv
+import openai
+import os
 
 app = Flask(__name__)
+
+openai.api_key = os.getenv("OPENAI_KEY")
 
 @app.route("/")
 def index():
@@ -22,10 +26,18 @@ def index():
 def team():
     selected = request.args.get("selectedOption")
     ## TODO call OpenAI API, get a introduction
+    prompt = f"give me a short introduction for {selected}"
+    messages = [{"role": "user", "content": prompt}]
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=messages,
+        temperature=0,
+    )
+    rslt = response.choices[0].message["content"]
     return render_template(
         "result.html",
         selected=selected,
-        intro=""
+        intro=rslt
     )
 
 
