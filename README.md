@@ -58,7 +58,7 @@ Then the files in the project directory is packed into a docker image using the 
 
 The result should look like this:
 
-![docker_image_result]()
+![docker_image_result](./resources/docker_img_rslt.png)
 
 Then the image is pushed to Docker Hub using the following command:
 
@@ -68,7 +68,7 @@ It can be verified that the image is successfully uploaded by checking the repos
 
 Here is what this project's repository looks like after the push.
 
-![docker_hub_repo]()
+![docker_hub_repo](./resources/dockehub.png)
 
 ## Deployment
 
