@@ -10,4 +10,4 @@ flask
 gunicorn
 
 python-dotenv
-openai
+openai==0.28
