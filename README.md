@@ -4,7 +4,7 @@
 Gavin Li `gl183`
 
 ## Website & Video explanation
-[Website](https://www.baidu.com)<br />[Video explanation](https://www.youtube.com)
+[NBA teams introduction](nbateamsintro.azurewebsites.net)<br />[Video explanation](https://www.youtube.com)
 
 ## Purpose of the project
 
@@ -24,13 +24,13 @@ There are two routings in the app:
 
     The homepage is routed to the `index()` function, which returns the `index.html` with a list of 30 NBA teams rendered as choices of a dropdown menu.
 
-![index_page]()
+![index_page](./resources/index.png)
 
 2. `/team`
     
     The result page displays the result returned by the LLM to the user.
 
-![result_page]()
+![result_page](./resources/rslt_page.png)
 
 ## LLM Integration
 
@@ -71,6 +71,12 @@ Here is what this project's repository looks like after the push.
 ![docker_hub_repo](./resources/dockehub.png)
 
 ## Deployment
+
+The website is then deployed to Azure. Make sure to add the LLM API key, and the website port `WEBSITES_PORT` to the configuration.
+
+Here is a screenshot for the Azure page.
+
+![azure](./resources/nbateamsintro.png)
 
 ## Reference
 [Professor Noah's ruff template](https://github.com/nogibjj/python-ruff-template)
