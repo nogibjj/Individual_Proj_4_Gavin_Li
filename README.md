@@ -4,7 +4,7 @@
 Gavin Li `gl183`
 
 ## Website & Video explanation
-[NBA teams introduction](nbateamsintro.azurewebsites.net)<br />[Video explanation](https://www.youtube.com)
+[NBA teams introduction](https://nbateamsintro.azurewebsites.net)<br />[Video explanation](https://www.youtube.com)
 
 ## Purpose of the project
 
